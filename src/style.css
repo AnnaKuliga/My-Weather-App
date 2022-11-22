@@ -28,7 +28,7 @@ h1 {
   line-height: 1;
   margin-right: 10px;
 }
-.dateAndTime,
+#date-time,
 .mainDescription,
 #extraDescription {
   color: rgb(66, 65, 65);
