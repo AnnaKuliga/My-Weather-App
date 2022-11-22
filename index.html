@@ -36,7 +36,7 @@
                     type="search"
                     placeholder="Search for the city"
                     class="form-control"
-                    id="city-input"
+                    id="search-text-input"
                     autocomplete="off"
                   />
                 </div>
@@ -53,14 +53,15 @@
           <div class="overview">
             <div class="row">
               <div class="col-4">
-                <h1>Lublin</h1>
+                <h1 id="city"></h1>
+                <div id="country"></div>
                 <div class="time-date" id="show-time">
                   <span class="weekday">Sunday, </span>
                   <span class="clock">17:51</span>
                   <div class="calendar">October 09, 2022</div>
                 </div>
 
-                <div class="mainDescription">Clear sky</div>
+                <div class="mainDescription" id="description">Clear sky</div>
               </div>
               <div class="col-3">
                 <button id="gps">
@@ -76,7 +77,7 @@
             <div class="row">
               <div class="col-6">
                 <div class="d-flex weather-temperature">
-                  <span class="currentTemperature">12</span>
+                  <span class="current-temp" id="temperature">12</span>
                   <button id="unitBtn" data-units="c">°C</button>
                   <button id="unitBtn" data-units="f">°F</button>
                 </div>

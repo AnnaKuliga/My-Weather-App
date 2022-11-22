@@ -1,3 +1,5 @@
+//DATE & TIME
+
 function showFullTime() {
   let date = new Date();
 
@@ -56,3 +58,21 @@ function showFullTime() {
   currentTime.innerHTML = `${currentDay}, ${hours} : ${minutes} : ${seconds}  <br/> ${currentMonth}, ${dateDay}, ${currentYear}`;
 }
 showFullTime();
+
+// Temperature
+function displayTemperature(response) {
+  console.log(response);
+  let temperatureElement = document.querySelector("#temperature");
+  let cityElement = document.querySelector("#city");
+  let countryElement = document.querySelector("#country");
+  let description = document.querySelector("#description");
+  temperatureElement.innerHTML = Math.round(response.data.temperature.current);
+  cityElement.innerHTML = response.data.city;
+  countryElement.innerHTML = response.data.country;
+  description.innerHTML = response.data.condition.description;
+}
+
+let apiKey = "5fb4oa610201e8b3c770fffbaee96fft";
+let apiUrl = `https://api.shecodes.io/weather/v1/current?query={Sydney}&key=${apiKey}&units=metric`;
+
+axios.get(apiUrl).then(displayTemperature);
