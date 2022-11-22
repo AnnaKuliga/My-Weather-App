@@ -68,8 +68,11 @@ function displayTemperature(response) {
   let description = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
+  let iconElement = document.querySelector("#icon");
 
-  temperatureElement.innerHTML = Math.round(response.data.temperature.current);
+  temperatureElement.innerHTML = `${Math.round(
+    response.data.temperature.current
+  )}&deg`;
   cityElement.innerHTML = response.data.city;
   countryElement.innerHTML = response.data.country;
   description.innerHTML = response.data.condition.description;
