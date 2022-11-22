@@ -1,9 +1,15 @@
-.weather-app-body {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-  border: 1px solid rgb(194, 194, 194);
-  border-radius: 40px;
+a {
+  text-decoration: none;
+  color: rgb(66, 65, 65);
+}
+
+a:hover {
+  color: blue;
+}
+
+body {
+  background-color: rgb(252, 248, 255);
+  font-family: "Libre Baskerville", serif;
 }
 
 h1 {
@@ -15,20 +21,12 @@ h1 {
   margin-bottom: 15px;
 }
 
-a {
-  text-decoration: none;
+.currentTemperature {
   color: rgb(66, 65, 65);
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 1;
 }
-
-a:hover {
-  color: blue;
-}
-body {
-  background-color: rgb(252, 248, 255);
-
-  font-family: "Libre Baskerville", serif;
-}
-
 .dateAndTime,
 .mainDescription,
 #extraDescription {
@@ -38,4 +36,34 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
+}
+.overview {
+  margin-bottom: 20px;
+}
+
+.weather-app-body {
+  padding: 20px;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 40px;
+}
+
+.weather-app-wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+}
+.main-icon {
+  font-size: 170px;
+  text-align: right;
+}
+.main-icon:hover {
+  font-size: 220px;
+}
+
+#unitBtn {
+  padding: 3px;
+  font-size: 20px;
+  line-height: 1.5;
+  border-radius: 40px;
+  border: 0.9px solid rgba(173, 102, 102, 0.712);
+  color: rgb(66, 65, 65);
 }

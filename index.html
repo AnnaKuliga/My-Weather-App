@@ -26,60 +26,76 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app-body">
-        <h1>Lublin</h1>
-        <div class="dateAndTime">
-          <span class="day">Friday</span>,
-          <span class="currentTime"> 05:33</span>
-        </div>
-        <div class="mainDescription">Clear sky</div>
-        <div class="row">
-          <div class="col-6">
-            <img src="images/clear-sky-day.png" alt="Clear sky" />
-            <span class="currentTemperature"> 12</span> ℃ | ℉
+      <div class="weather-app-wrapper">
+        <div class="weather-app-body">
+          <div class="overview">
+            <div class="row">
+              <div class="col-6">
+                <h1>Lublin</h1>
+                <div class="dateAndTime">
+                  <span class="day">Friday</span>,
+                  <span class="currentTime"> 05:33</span>
+                </div>
+                <div class="mainDescription">Clear sky</div>
+              </div>
+              <div class="col-6" id="main-icon">
+                <i class="fa-solid fa-cloud-sun main-icon"> </i>
+              </div>
+            </div>
           </div>
-          <div class="col-6" id="extraDescription">
-            <div id="humidity">Humidity: 20%</div>
-            <div id="wind">Wind: 3 Km/H</div>
-          </div>
-        </div>
-        <div class="following-days" id="forecast">
           <div class="row">
-            <div class="col">
-              Monday <br />
-              16℃<br />
-              <i class="fa-solid fa-cloud-sun"></i>
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <span class="currentTemperature">12</span>
+                <button id="unitBtn" data-units="c">°C</button>
+                <button id="unitBtn" data-units="f">°F</button>
+              </div>
             </div>
-            <div class="col">
-              Tuesday <br />
-              16℃<br />
-              <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <div class="col-6" id="extraDescription">
+              <div id="humidity">Humidity: 20%</div>
+              <div id="wind">Wind: 3 Km/H</div>
             </div>
-            <div class="col">
-              Wednesday <br />
-              13℃<br />
-              <i class="fa-solid fa-cloud-sun"></i>
-            </div>
-            <div class="col">
-              Thursday <br />
-              13℃<br />
-              <i class="fa-solid fa-cloud-sun"></i>
-            </div>
-            <div class="col">
-              Friday<br />
-              14℃<br />
-              <i class="fa-solid fa-cloud-sun"></i>
+          </div>
+          <div class="following-days" id="forecast">
+            <div class="row">
+              <div class="col">
+                Monday <br />
+                16℃<br />
+                <i class="fa-solid fa-cloud-sun"></i>
+              </div>
+              <div class="col">
+                Tuesday <br />
+                16℃<br />
+                <i class="fa-solid fa-cloud-showers-heavy"></i>
+              </div>
+              <div class="col">
+                Wednesday <br />
+                13℃<br />
+                <i class="fa-solid fa-cloud-sun"></i>
+              </div>
+              <div class="col">
+                Thursday <br />
+                13℃<br />
+                <i class="fa-solid fa-cloud-sun"></i>
+              </div>
+              <div class="col">
+                Friday<br />
+                14℃<br />
+                <i class="fa-solid fa-cloud-sun"></i>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="gitLink">
-        <small>
-          <a href="https://github.com/AnnaKuliga/My-Weather-App" target="_blank"
-            >Open-source code</a
+        <div class="gitLink">
+          <small>
+            <a
+              href="https://github.com/AnnaKuliga/My-Weather-App"
+              target="_blank"
+              >Open-source code</a
+            >
+            by Anna Kuliga</small
           >
-          by Anna Kuliga</small
-        >
+        </div>
       </div>
     </div>
 
