@@ -78,11 +78,11 @@ h1 {
 }
 
 #unitBtn {
-  padding: 10px;
+  padding: 10px 15px;
   margin: 8px;
   font-size: 15px;
   line-height: 1.5;
-  border-radius: 80px;
+  border-radius: 50%;
   border: 1px solid rgb(66, 65, 65);
   color: rgb(66, 65, 65);
 }
@@ -98,4 +98,12 @@ h1 {
   width: 50%;
   line-height: 2.5;
   padding: 50px;
+}
+#gps {
+  padding: 10px 15px;
+  font-size: 25px;
+  line-height: 1.5;
+  border-radius: 50%;
+  border: 1px solid rgb(66, 65, 65);
+  color: rgb(66, 65, 65);
 }
