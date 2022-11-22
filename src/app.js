@@ -66,10 +66,15 @@ function displayTemperature(response) {
   let cityElement = document.querySelector("#city");
   let countryElement = document.querySelector("#country");
   let description = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
   countryElement.innerHTML = response.data.country;
   description.innerHTML = response.data.condition.description;
+  humidityElement.innerHTML = response.data.temperature.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
 let apiKey = "5fb4oa610201e8b3c770fffbaee96fft";
