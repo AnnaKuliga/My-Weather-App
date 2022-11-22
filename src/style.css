@@ -92,3 +92,10 @@ h1 {
 .weather-description {
   margin: 20px;
 }
+
+#search-city-bar {
+  margin: auto 0;
+  width: 50%;
+  line-height: 2.5;
+  padding: 50px;
+}
