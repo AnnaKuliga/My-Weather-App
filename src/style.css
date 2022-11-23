@@ -116,8 +116,11 @@ h1 {
 }
 
 #icon {
-  width: 200px;
+  width: 300px;
 }
 #icon:hover {
-  width: 250px;
+  width: 350px;
+}
+#show-time .clock {
+  font-size: 50px;
 }
