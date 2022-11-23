@@ -78,9 +78,14 @@ function displayTemperature(response) {
   description.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = response.data.temperature.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  iconElement.setAttribute(
+    "src",
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+  );
+  iconElement.setAttribute("alt", response.data.condition.description);
 }
 
 let apiKey = "5fb4oa610201e8b3c770fffbaee96fft";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query={Sydney}&key=${apiKey}&units=metric`;
+let apiUrl = `https://api.shecodes.io/weather/v1/current?query={Monaco}&key=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
