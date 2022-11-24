@@ -61,7 +61,6 @@ showFullTime();
 
 // Temperature
 function displayTemperature(response) {
-  console.log(response);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let countryElement = document.querySelector("#country");
@@ -85,7 +84,32 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.condition.description);
 }
 
-let apiKey = "5fb4oa610201e8b3c770fffbaee96fft";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query={Kair}&key=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "5fb4oa610201e8b3c770fffbaee96fft";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#search-text-input");
+  search(cityInputElement.value);
+}
+search("Oslo");
+
+function searchLocation(position) {
+  let apiKey = "5fb4oa610201e8b3c770fffbaee96fft";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${position.coords.longitude}&lat=${position.coords.latitude}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function getLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
+let gpsBtn = document.querySelector("#gps");
+gpsBtn.addEventListener("click", getLocation);
