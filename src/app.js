@@ -108,8 +108,10 @@ function getLocation(event) {
 }
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
-  let fahrenheitTemprature = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
+  celsiusBtn.classList.remove("active");
+  fahrenheitBtn.classList.add("active");
+  let fahrenheitTemprature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemprature);
 }
 
