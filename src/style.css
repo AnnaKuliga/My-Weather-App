@@ -80,7 +80,7 @@ h1 {
   max-width: 80px;
 }
 
-#unitBtn {
+.unitBtn {
   position: relative;
   right: -30px;
   padding: 10px 15px;

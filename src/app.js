@@ -69,6 +69,8 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
 
+  celsiusTemperature = response.data.temperature.current;
+
   temperatureElement.innerHTML = `${Math.round(
     response.data.temperature.current
   )}&deg`;
@@ -95,7 +97,6 @@ function handleSubmit(event) {
   let cityInputElement = document.querySelector("#search-text-input");
   search(cityInputElement.value);
 }
-search("Oslo");
 
 function searchLocation(position) {
   let apiKey = "5fb4oa610201e8b3c770fffbaee96fft";
@@ -107,9 +108,22 @@ function getLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemprature = (celsiusTemperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemprature);
+}
+
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 let gpsBtn = document.querySelector("#gps");
 gpsBtn.addEventListener("click", getLocation);
+
+let fahrenheitBtn = document.querySelector("#fahrenheit-link");
+fahrenheitBtn.addEventListener("click", displayFahrenheitTemperature);
+
+search("Oslo");
