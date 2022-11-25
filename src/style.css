@@ -9,10 +9,18 @@ a:hover {
 
 body {
   font-family: "Libre Baskerville", serif;
-  background: linear-gradient(-40deg, #234cd5, #2dafdf, #e75e3c, #eee452);
+  background: linear-gradient(
+    -40deg,
+    #142d80,
+    #234cd5,
+    #2dafdf,
+    #e75e3c,
+    #eee452
+  );
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100vh;
+  max-width: 70%;
+  margin: auto;
 }
 
 @keyframes gradient {
@@ -101,8 +109,8 @@ h1 {
   width: 50%;
 }
 
-#show-time .clock {
-  font-size: 50px;
+#show-time {
+  font-size: 25px;
 }
 #second-alert {
   text-align: center;
@@ -142,6 +150,10 @@ h1 {
   background: rgba(248, 235, 235, 0.322);
   border: 0;
 }
+.gitLink {
+  margin-top: 20px;
+  text-align: center;
+}
 .main-icon {
   width: 60px;
 }
@@ -167,15 +179,18 @@ h1 {
   background-color: rgb(241, 236, 245);
 }
 .weather-app-body {
+  background-color: rgba(248, 235, 235, 0.322);
   border: 1px solid rgb(194, 194, 194);
   border-radius: 40px;
   box-shadow: 2px 2px 30px;
   padding: 20px;
+  margin: auto;
 }
 
 .weather-app-wrapper {
   margin: 40px auto;
-  max-width: 900px;
+  max-width: 85%;
+  padding: 30px;
 }
 .weather-description {
   margin: 20px;
