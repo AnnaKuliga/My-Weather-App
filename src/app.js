@@ -61,6 +61,7 @@ showFullTime();
 
 // Temperature
 function displayTemperature(response) {
+  console.log(response);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let countryElement = document.querySelector("#country");
@@ -68,6 +69,7 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
+  let pressureElement = document.querySelector("#pressure");
 
   celsiusTemperature = response.data.temperature.current;
 
@@ -77,6 +79,7 @@ function displayTemperature(response) {
   description.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = response.data.temperature.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  pressureElement.innerHTML = Math.round(response.data.temperature.pressure);
   iconElement.setAttribute(
     "src",
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
