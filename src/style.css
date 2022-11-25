@@ -92,11 +92,10 @@ h1 {
   color: rgb(66, 65, 65);
 }
 .unitBtn:hover {
-  background-color: rgb(187, 187, 187);
+  background-color: rgb(241, 236, 245);
 }
 .active {
-  background-color: rgb(252, 248, 255);
-  font-size: 12px;
+  font-size: 10px;
 }
 
 #forecast {
@@ -125,6 +124,7 @@ h1 {
 #gps:hover {
   background-color: rgb(187, 187, 187);
 }
+
 #icon {
   width: 300px;
 }
@@ -133,4 +133,11 @@ h1 {
 }
 #show-time .clock {
   font-size: 50px;
+}
+#first-alert {
+  margin-bottom: 0;
+  text-align: center;
+}
+#second-alert {
+  text-align: center;
 }
