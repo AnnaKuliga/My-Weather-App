@@ -61,14 +61,14 @@ h1 {
   margin: 60px 20px 20px;
 }
 #gps {
-  position: relative;
-  right: -220px;
-  padding: 10px 15px;
-  font-size: 25px;
-  line-height: 1.5;
   border-radius: 50%;
   border: 1px solid rgb(66, 65, 65);
   color: rgb(66, 65, 65);
+  font-size: 25px;
+  line-height: 1.5;
+  position: relative;
+  padding: 10px 15px;
+  right: -220px;
 }
 #gps:hover {
   background-color: rgb(187, 187, 187);
@@ -81,10 +81,10 @@ h1 {
 }
 
 #search-city-bar {
-  margin: auto 0;
-  width: 50%;
   line-height: 2.5;
+  margin: auto 0;
   padding: 50px;
+  width: 50%;
 }
 
 #show-time .clock {
@@ -104,40 +104,40 @@ h1 {
 .active {
   font-size: 10px;
 }
-.overview {
-  margin: 20px;
-}
 
-.weather-app-body {
-  padding: 20px;
-  border: 1px solid rgb(194, 194, 194);
-  border-radius: 40px;
-}
-
-.weather-app-wrapper {
-  max-width: 900px;
-  margin: 40px auto;
-}
 .main-icon {
   width: 60px;
 }
 .main-icon:hover {
   max-width: 80px;
 }
+.overview {
+  margin: 20px;
+}
 
 .unitBtn {
-  position: relative;
-  right: -30px;
-  padding: 10px 15px;
-  margin: 8px;
-  font-size: 15px;
-  line-height: 1.5;
   border-radius: 50%;
   border: 1px solid rgb(65, 66, 66);
   color: rgb(66, 65, 65);
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 8px;
+  padding: 10px 15px;
+  position: relative;
+  right: -30px;
 }
 .unitBtn:hover {
   background-color: rgb(241, 236, 245);
+}
+.weather-app-body {
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.weather-app-wrapper {
+  margin: 40px auto;
+  max-width: 900px;
 }
 .weather-description {
   margin: 20px;
