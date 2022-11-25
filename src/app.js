@@ -124,6 +124,11 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+function displayAlert(event) {
+  event.preventDefault();
+  let element = document.getElementById("first-alert");
+  element.remove();
+}
 let celsiusTemperature = null;
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
@@ -136,5 +141,8 @@ fahrenheitBtn.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusBtn = document.querySelector("#celsius-link");
 celsiusBtn.addEventListener("click", displayCelsiusTemperature);
+
+let alertBtn = document.querySelector("#alert-btn");
+alertBtn.addEventListener("click", displayAlert);
 
 search("Oslo");
