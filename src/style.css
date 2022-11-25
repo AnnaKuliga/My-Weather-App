@@ -4,7 +4,7 @@ a {
 }
 
 a:hover {
-  color: blue;
+  color: #e7e7ee;
 }
 
 body {
@@ -149,6 +149,7 @@ h1 {
   background: rgba(248, 235, 235, 0.322);
 }
 .gitLink {
+  font-size: 18px;
   margin-top: 20px;
   text-align: center;
 }
