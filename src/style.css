@@ -118,7 +118,30 @@ h1 {
 .active {
   font-size: 10px;
 }
+.col {
+  display: block;
+  border: 0;
+  border-radius: 30px;
+  background: rgba(248, 235, 235, 0.322);
+  margin: 40px 20px;
+  padding: 40px 20px;
+  text-align: center;
+  transition: all 200ms ease-in-out;
+}
 
+.col:hover {
+  background: rgba(243, 224, 186, 0.568);
+}
+.following-days {
+  display: block;
+  margin: 30px 290px 10px 10px;
+  padding: 10px;
+  line-height: 2.5;
+  border: 0.9px solid rgba(248, 235, 235, 0.712);
+  border-radius: 30px;
+  background: rgba(248, 235, 235, 0.322);
+  border: 0;
+}
 .main-icon {
   width: 60px;
 }
