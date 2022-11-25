@@ -1,6 +1,6 @@
 a {
-  text-decoration: none;
   color: rgb(66, 65, 65);
+  text-decoration: none;
 }
 
 a:hover {
@@ -20,16 +20,9 @@ h1 {
   line-height: 1.5;
   margin-bottom: 30px;
 }
+
 #country {
   margin-bottom: 40px;
-}
-.current-temp,
-#temperature {
-  color: rgb(66, 65, 65);
-  font-size: 70px;
-  font-weight: 400;
-  line-height: 1;
-  margin-right: 10px;
 }
 
 #date-time {
@@ -43,9 +36,9 @@ h1 {
 .mainDescription,
 #description {
   color: rgb(66, 65, 65);
+  font-size: 25px;
   line-height: 1.5;
   margin: 30px 0;
-  font-size: 25px;
 }
 
 #extraDescription {
@@ -58,6 +51,58 @@ h1 {
 }
 #extraDescription {
   text-align: right;
+}
+
+#first-alert {
+  margin-bottom: 0;
+  text-align: center;
+}
+#forecast {
+  margin: 60px 20px 20px;
+}
+#gps {
+  position: relative;
+  right: -220px;
+  padding: 10px 15px;
+  font-size: 25px;
+  line-height: 1.5;
+  border-radius: 50%;
+  border: 1px solid rgb(66, 65, 65);
+  color: rgb(66, 65, 65);
+}
+#gps:hover {
+  background-color: rgb(187, 187, 187);
+}
+#icon {
+  width: 300px;
+}
+#icon:hover {
+  width: 350px;
+}
+
+#search-city-bar {
+  margin: auto 0;
+  width: 50%;
+  line-height: 2.5;
+  padding: 50px;
+}
+
+#show-time .clock {
+  font-size: 50px;
+}
+#second-alert {
+  text-align: center;
+}
+.current-temp,
+#temperature {
+  color: rgb(66, 65, 65);
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 1;
+  margin-right: 10px;
+}
+.active {
+  font-size: 10px;
 }
 .overview {
   margin: 20px;
@@ -94,50 +139,6 @@ h1 {
 .unitBtn:hover {
   background-color: rgb(241, 236, 245);
 }
-.active {
-  font-size: 10px;
-}
-
-#forecast {
-  margin: 60px 20px 20px;
-}
 .weather-description {
   margin: 20px;
-}
-
-#search-city-bar {
-  margin: auto 0;
-  width: 50%;
-  line-height: 2.5;
-  padding: 50px;
-}
-#gps {
-  position: relative;
-  right: -220px;
-  padding: 10px 15px;
-  font-size: 25px;
-  line-height: 1.5;
-  border-radius: 50%;
-  border: 1px solid rgb(66, 65, 65);
-  color: rgb(66, 65, 65);
-}
-#gps:hover {
-  background-color: rgb(187, 187, 187);
-}
-
-#icon {
-  width: 300px;
-}
-#icon:hover {
-  width: 350px;
-}
-#show-time .clock {
-  font-size: 50px;
-}
-#first-alert {
-  margin-bottom: 0;
-  text-align: center;
-}
-#second-alert {
-  text-align: center;
 }
