@@ -19,7 +19,7 @@ body {
   );
   background-size: 400% 400%;
   color: rgb(66, 65, 65);
-  font-family: "Libre Baskerville", serif;
+  font-family: "Quicksand", sans-serif;
   margin: auto;
   max-width: 70%;
 }
@@ -41,6 +41,7 @@ h1 {
   height: 28px;
   line-height: 1.5;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 #country {
@@ -135,7 +136,7 @@ h1 {
 }
 
 .col:hover {
-  background: rgba(243, 224, 186, 0.568);
+  background: rgb(187, 187, 187);
 }
 .following-days {
   display: block;
@@ -181,7 +182,7 @@ h1 {
   background-color: rgb(187, 187, 187);
 }
 .weather-app-body {
-  background-color: rgba(248, 235, 235, 0.322);
+  background-color: rgba(231, 231, 231, 0.671);
   border: 1px solid rgb(194, 194, 194);
   border-radius: 40px;
   box-shadow: 2px 2px 30px;
