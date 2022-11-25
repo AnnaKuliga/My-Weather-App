@@ -9,13 +9,12 @@ a:hover {
 
 body {
   animation: gradient 15s ease infinite;
+
   background: linear-gradient(
-    -40deg,
-    #142d80,
-    #234cd5,
-    #2dafdf,
-    #e75e3c,
-    #eee452
+    80deg,
+    rgb(255, 241, 165) 1.9%,
+    rgb(200, 125, 76) 49.7%,
+    rgb(83, 54, 54) 100.5%
   );
   background-size: 400% 400%;
   color: rgb(66, 65, 65);
@@ -193,7 +192,7 @@ h1 {
 
 .weather-app-wrapper {
   margin: 40px auto;
-  max-width: 85%;
+  max-width: 95%;
   padding: 30px;
 }
 .weather-description {
