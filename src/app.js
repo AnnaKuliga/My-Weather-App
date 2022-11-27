@@ -60,8 +60,15 @@ function showFullTime() {
 showFullTime();
 
 // Temperature
+function getForecast(city) {
+  console.log(city);
+  let apiKey = "5fb4oa610201e8b3c770fffbaee96fft";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayTemperature(response) {
-  console.log(response);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let countryElement = document.querySelector("#country");
@@ -85,6 +92,8 @@ function displayTemperature(response) {
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
   iconElement.setAttribute("alt", response.data.condition.description);
+
+  getForecast(response.data.city);
 }
 
 function search(city) {
@@ -133,7 +142,8 @@ function displayAlert(event) {
   element.remove();
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
@@ -173,5 +183,4 @@ celsiusBtn.addEventListener("click", displayCelsiusTemperature);
 let alertBtn = document.querySelector("#alert-btn");
 alertBtn.addEventListener("click", displayAlert);
 
-displayForecast();
 search("Oslo");
