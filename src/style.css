@@ -4,7 +4,7 @@ a {
 }
 
 a:hover {
-  color: #e7e7ee;
+  color: #27a8c9;
 }
 
 body {
@@ -80,8 +80,8 @@ h1 {
 }
 #gps {
   border-radius: 50%;
-  border: 1px solid rgb(117, 117, 117);
-  color: rgb(66, 65, 65);
+  border: 1px solid #2041aa;
+  color: #2041aa;
   font-size: 20px;
   line-height: 1.5;
   position: relative;
@@ -90,9 +90,9 @@ h1 {
   bottom: -110px;
 }
 #gps:hover {
-  background-color: rgb(187, 187, 187);
+  background-color: #88d6e9a4;
   transition: ease-out 0.2s;
-  border: 1px solid rgb(65, 66, 66);
+  border: 1px solid #2041aa;
 }
 .humidityElement,
 .pressureElement,
@@ -199,7 +199,7 @@ h1 {
 .weather-forecast-date {
   font-size: 25px;
 }
-.gitLink {
+.referenceLink {
   font-size: 18px;
   margin-top: 20px;
   text-align: center;
@@ -216,15 +216,15 @@ h1 {
 
 .unitBtn {
   border-radius: 50%;
-  border: 1px solid rgb(117, 117, 117);
-  color: rgb(66, 65, 65);
+  border: 1px solid #2041aa;
+  color: #2041aa;
   font-size: 15px;
   line-height: 1.5;
   margin: 8px;
   padding: 10px 15px;
 }
 .unitBtn:hover {
-  background-color: rgb(187, 187, 187);
+  background-color: #88d6e9a4;
   transition: ease-out 0.2s;
 }
 #celsius-link {
@@ -239,7 +239,7 @@ h1 {
 }
 .active {
   font-size: 15px;
-  background-color: rgba(187, 187, 187, 0.767);
+  background-color: #88d6e9a4;
 }
 .weather-app-body {
   background-color: rgba(231, 231, 231, 0.671);
