@@ -123,6 +123,24 @@ function getLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+
+  celsiusBtn.classList.remove("active");
+  fahrenheitBtn.classList.add("active");
+
+  let fahrenheitTemprature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemprature);
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  celsiusBtn.classList.add("active");
+  fahrenheitBtn.classList.remove("active");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
 
 function displayAlert(event) {
   event.preventDefault();
@@ -146,7 +164,7 @@ function displayForecast(response) {
                     forecastDay.time
                   )}</div>
                   <div class="weather-forecast-temperature">
-                    <span class="weather-forecast-temperature-max">${Math.round(
+                    <span class="weather-forecast-temperature-max" id="temp-max">${Math.round(
                       forecastDay.temperature.maximum
                     )}°</span>
                     <span class="weather-forecast-temperature-min">${Math.round(
@@ -167,8 +185,18 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
+let celsiusTemperature = null;
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
 let gpsBtn = document.querySelector("#gps");
 gpsBtn.addEventListener("click", getLocation);
+
+let fahrenheitBtn = document.querySelector("#fahrenheit-link");
+fahrenheitBtn.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusBtn = document.querySelector("#celsius-link");
+celsiusBtn.addEventListener("click", displayCelsiusTemperature);
 
 let alertBtn = document.querySelector("#alert-btn");
 alertBtn.addEventListener("click", displayAlert);
