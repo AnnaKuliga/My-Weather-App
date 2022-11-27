@@ -67,7 +67,6 @@ function formatDay(timestamp) {
 }
 
 function getForecast(city) {
-  console.log(city);
   let apiKey = "5fb4oa610201e8b3c770fffbaee96fft";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
 
@@ -149,7 +148,6 @@ function displayAlert(event) {
 }
 
 function displayForecast(response) {
-  console.log(response.data.daily);
   let forecast = response.data.daily;
 
   let forecastElement = document.querySelector("#forecast");
