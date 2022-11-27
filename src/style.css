@@ -96,10 +96,17 @@ h1 {
   background-color: rgb(187, 187, 187);
 }
 #icon {
-  width: 300px;
+  background-color: rgba(247, 243, 243, 0.342);
+  width: 200px;
+  display: inline-block;
+  border: 2px solid rgba(247, 243, 243, 0.342);
+  border-radius: 50%;
+  transition: linear 0.25s;
 }
 #icon:hover {
-  width: 350px;
+  transition: ease-out 0.2s;
+  border: 2px solid rgba(255, 255, 255, 0.788);
+  width: 250px;
 }
 
 #search-city-bar {
