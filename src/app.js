@@ -132,6 +132,31 @@ function displayAlert(event) {
   let element = document.getElementById("first-alert");
   element.remove();
 }
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+                <div class="col-2">
+                  <div class="weather-forecast-date">${day}</div>
+                  <div class="weather-forecast-temperature">
+                    <span class="weather-forecast-temperature-max">16°</span>
+                    <span class="weather-forecast-temperature-min">12°</span>
+                  </div>
+                  <i class="fa-solid fa-cloud-sun"></i>
+                </div>
+              
+    `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let celsiusTemperature = null;
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
@@ -148,4 +173,5 @@ celsiusBtn.addEventListener("click", displayCelsiusTemperature);
 let alertBtn = document.querySelector("#alert-btn");
 alertBtn.addEventListener("click", displayAlert);
 
+displayForecast();
 search("Oslo");

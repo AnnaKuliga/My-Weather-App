@@ -138,7 +138,7 @@ h1 {
 .col:hover {
   background: rgb(187, 187, 187);
 }
-.weather-forecast-days {
+.weather-forecast {
   display: block;
   margin: 30px 290px 10px 10px;
   padding: 10px;
@@ -146,6 +146,10 @@ h1 {
   border: 0.9px solid rgba(248, 235, 235, 0.712);
   border-radius: 30px;
   background: rgba(248, 235, 235, 0.322);
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 25px;
 }
 .gitLink {
   font-size: 18px;
