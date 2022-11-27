@@ -55,7 +55,7 @@ function showFullTime() {
   let currentYear = date.getFullYear();
 
   let currentTime = document.querySelector("#show-time");
-  currentTime.innerHTML = `<b>${hours} : ${minutes} : ${seconds}<br/>${currentDay} <br/><br/>${currentMonth} ${dateDay},<br/> ${currentYear}</b>`;
+  currentTime.innerHTML = `<b>${hours} : ${minutes} : ${seconds}</b><br/>${currentDay} <br/>${currentMonth} ${dateDay},<br/> ${currentYear}`;
 }
 showFullTime();
 

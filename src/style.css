@@ -10,11 +10,11 @@ a:hover {
 body {
   background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/452/original/382875_84981.jpg?1669554976)
     no-repeat center center fixed;
-  background-size: 80%;
+  background-size: 70%;
   color: rgb(66, 65, 65);
   font-family: "Quicksand", sans-serif;
   margin: auto;
-  max-width: 80%;
+  max-width: 70%;
 }
 
 @keyframes gradient {
@@ -39,7 +39,7 @@ h1 {
 
 #country {
   font-size: 35px;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 #date-time {
@@ -54,8 +54,9 @@ h1 {
 #description {
   color: rgb(66, 65, 65);
   font-size: 35px;
+  font-weight: 800;
   line-height: 1.5;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   margin-right: 10px;
   text-align: right;
 }
@@ -65,8 +66,8 @@ h1 {
   font-size: 15px;
   font-weight: 100;
   line-height: 1.5;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 30px;
+  padding: 0 auto;
   text-align: center;
 }
 
@@ -75,18 +76,18 @@ h1 {
   text-align: center;
 }
 #forecast {
-  margin: 60px 20px 20px;
+  margin: 20px;
 }
 #gps {
   border-radius: 50%;
   border: 1px solid rgb(117, 117, 117);
   color: rgb(66, 65, 65);
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.5;
   position: relative;
   padding: 10px 15px;
-  right: -15px;
-  bottom: -30px;
+  right: -30px;
+  bottom: -110px;
 }
 #gps:hover {
   background-color: rgb(187, 187, 187);
@@ -103,18 +104,19 @@ h1 {
 }
 #icon {
   background-color: rgba(247, 243, 243, 0.342);
-  width: 200px;
   display: inline-block;
-  border: 2px solid rgba(247, 243, 243, 0.342);
+  border: 2px solid rgba(94, 92, 92, 0.712);
   border-radius: 50%;
+  background: rgba(221, 218, 218, 0.568);
+  box-shadow: 2px 2px 30px;
   margin-top: 150px;
-  margin-left: -20px;
+  margin-left: -30px;
   transition: linear 0.25s;
+  width: 200px;
 }
 #icon:hover {
   transition: ease-out 0.2s;
-  border: 2px solid rgba(255, 255, 255, 0.788);
-  width: 250px;
+  border: 2px solid rgba(94, 92, 92, 0.712);
 }
 
 #search-city-bar {
@@ -129,8 +131,9 @@ h1 {
   width: 40%;
 }
 #show-time {
-  font-size: 30px;
-  margin-left: 65px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-left: 80px;
 }
 #second-alert {
   text-align: center;
@@ -151,20 +154,23 @@ h1 {
   margin-bottom: 40px;
   padding: 0;
 }
+.calendar {
+  margin-left: 10px;
+}
 .cityName {
   margin-left: 100px;
   margin-bottom: 50px;
   padding: 15px;
 }
 .container {
-  max-width: 70%;
-  max-height: 60%;
+  margin-top: 20px;
+  max-width: 80%;
 }
 .col-2 {
   display: block;
-  border: 0;
+  border: 1px solid rgba(153, 150, 150, 0.555);
   border-radius: 30px;
-  background: rgba(248, 235, 235, 0.322);
+  background: rgba(248, 247, 235, 0.322);
   margin: 10px auto;
   padding: 10px;
   text-align: center;
@@ -172,7 +178,7 @@ h1 {
 }
 
 .col-2:hover {
-  background: rgb(187, 187, 187);
+  background: rgba(245, 223, 163, 0.521);
 }
 
 .weather-forecast {
@@ -180,10 +186,15 @@ h1 {
   margin: 20px;
   padding: 0 auto;
   line-height: 1.5;
-  border: 0.9px solid rgba(248, 235, 235, 0.712);
+  border: 0.9px solid rgba(94, 92, 92, 0.712);
   border-radius: 30px;
-  background: rgba(248, 235, 235, 0.322);
+  background: rgba(221, 218, 218, 0.568);
+  box-shadow: 2px 2px 30px;
   text-align: center;
+}
+.weather-forecast:hover {
+  transition: ease-out 0.2s;
+  border: 2px solid rgba(94, 92, 92, 0.712);
 }
 .weather-forecast-date {
   font-size: 25px;
@@ -215,21 +226,20 @@ h1 {
 .unitBtn:hover {
   background-color: rgb(187, 187, 187);
   transition: ease-out 0.2s;
-  border: 1px solid rgb(65, 66, 66);
 }
 #celsius-link {
   position: relative;
   right: -10px;
-  bottom: -70px;
+  bottom: -150px;
 }
 #fahrenheit-link {
   position: relative;
-  right: 15px;
-  bottom: -122px;
+  right: 25px;
+  bottom: -195px;
 }
 .active {
   font-size: 15px;
-  background-color: rgb(187, 187, 187);
+  background-color: rgba(187, 187, 187, 0.767);
 }
 .weather-app-body {
   background-color: rgba(231, 231, 231, 0.671);
@@ -247,4 +257,10 @@ h1 {
 }
 .weather-description {
   margin: 20px;
+}
+.weather-forecast-date {
+  font-size: 30px;
+}
+.weather-forecast-temperature-max {
+  font-size: 25px;
 }
