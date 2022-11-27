@@ -20,7 +20,7 @@ body {
   color: rgb(66, 65, 65);
   font-family: "Quicksand", sans-serif;
   margin: auto;
-  max-width: 70%;
+  max-width: 60%;
 }
 
 @keyframes gradient {
@@ -84,7 +84,7 @@ h1 {
 }
 #gps {
   border-radius: 50%;
-  border: 1px solid rgb(66, 65, 65);
+  border: 1px solid rgb(117, 117, 117);
   color: rgb(66, 65, 65);
   font-size: 25px;
   line-height: 1.5;
@@ -94,6 +94,8 @@ h1 {
 }
 #gps:hover {
   background-color: rgb(187, 187, 187);
+  transition: ease-out 0.2s;
+  border: 1px solid rgb(65, 66, 66);
 }
 #icon {
   background-color: rgba(247, 243, 243, 0.342);
@@ -175,7 +177,7 @@ h1 {
 
 .unitBtn {
   border-radius: 50%;
-  border: 1px solid rgb(65, 66, 66);
+  border: 1px solid rgb(117, 117, 117);
   color: rgb(66, 65, 65);
   font-size: 15px;
   line-height: 1.5;
@@ -186,6 +188,8 @@ h1 {
 }
 .unitBtn:hover {
   background-color: rgb(187, 187, 187);
+  transition: ease-out 0.2s;
+  border: 1px solid rgb(65, 66, 66);
 }
 
 .active {
