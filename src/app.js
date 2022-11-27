@@ -19,13 +19,13 @@ function showFullTime() {
   setInterval(showFullTime, 1000);
 
   let days = [
-    "SUNDAY",
-    "MONDAY",
-    "TUESDAY",
-    "WEDNESDAY",
-    "THURSDAY",
-    "FRIDAY",
-    "SATURDAY",
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
   ];
   let currentDay = days[date.getDay()];
 
@@ -55,7 +55,7 @@ function showFullTime() {
   let currentYear = date.getFullYear();
 
   let currentTime = document.querySelector("#show-time");
-  currentTime.innerHTML = `${hours} : ${minutes} : ${seconds}<br/> ${currentDay}<br/> <br/> ${currentMonth} ${dateDay},<br/> ${currentYear}`;
+  currentTime.innerHTML = `<b>${hours} : ${minutes} : ${seconds}<br/>${currentDay} <br/><br/>${currentMonth} ${dateDay},<br/> ${currentYear}</b>`;
 }
 showFullTime();
 
