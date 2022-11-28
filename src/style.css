@@ -17,18 +17,6 @@ body {
   max-width: 70%;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 h1 {
   font-size: 75px;
   font-weight: 100;
@@ -37,6 +25,11 @@ h1 {
   margin-bottom: 45px;
 }
 
+#celsius-link {
+  bottom: -150px;
+  position: relative;
+  right: -10px;
+}
 #country {
   font-size: 35px;
   margin-top: 80px;
@@ -75,24 +68,28 @@ h1 {
   margin-bottom: 0;
   text-align: center;
 }
+#fahrenheit-link {
+  bottom: -195px;
+  position: relative;
+  right: 25px;
+}
 #forecast {
   margin: 20px;
 }
 #gps {
   border-radius: 50%;
-  border: 1px solid #2041aa;
-  color: #2041aa;
+  border: 1px solid rgb(66, 65, 65);
+  bottom: -110px;
+  color: rgb(66, 65, 65);
   font-size: 20px;
   line-height: 1.5;
-  position: relative;
   padding: 10px 15px;
+  position: relative;
   right: -30px;
-  bottom: -110px;
 }
 #gps:hover {
-  background-color: #88d6e9a4;
+  background-color: #f8dcfcbb;
   transition: ease-out 0.2s;
-  border: 1px solid #2041aa;
 }
 .humidityElement,
 .pressureElement,
@@ -103,20 +100,16 @@ h1 {
   font-size: 20px;
 }
 #icon {
+  background: rgba(221, 218, 218, 0.568);
   background-color: rgba(247, 243, 243, 0.342);
-  display: inline-block;
   border: 2px solid rgba(94, 92, 92, 0.712);
   border-radius: 50%;
-  background: rgba(221, 218, 218, 0.568);
   box-shadow: 2px 2px 30px;
-  margin-top: 150px;
+  display: inline-block;
   margin-left: -30px;
+  margin-top: 150px;
   transition: linear 0.25s;
   width: 200px;
-}
-#icon:hover {
-  transition: ease-out 0.2s;
-  border: 2px solid rgba(94, 92, 92, 0.712);
 }
 
 #search-city-bar {
@@ -138,20 +131,14 @@ h1 {
 #second-alert {
   text-align: center;
 }
-.current-temp-degree {
-  color: rgb(66, 65, 65);
-  font-size: 70px;
-  font-weight: 400;
-  line-height: 1;
-}
 #temperature {
   color: rgb(66, 65, 65);
   font-size: 70px;
   font-weight: 400;
   line-height: 1;
-  margin-top: 0 auto;
-  margin-left: 50px;
   margin-bottom: 40px;
+  margin-left: 50px;
+  margin-top: 0 auto;
   padding: 0;
 }
 .calendar {
@@ -167,10 +154,10 @@ h1 {
   max-width: 80%;
 }
 .col-2 {
-  display: block;
+  background: rgba(248, 247, 235, 0.322);
   border: 1px solid rgba(153, 150, 150, 0.555);
   border-radius: 30px;
-  background: rgba(248, 247, 235, 0.322);
+  display: block;
   margin: 10px auto;
   padding: 10px;
   text-align: center;
@@ -181,65 +168,37 @@ h1 {
   background: rgba(245, 223, 163, 0.521);
 }
 
-.weather-forecast {
-  display: block;
-  margin: 20px;
-  padding: 0 auto;
-  line-height: 1.5;
-  border: 0.9px solid rgba(94, 92, 92, 0.712);
-  border-radius: 30px;
-  background: rgba(221, 218, 218, 0.568);
-  box-shadow: 2px 2px 30px;
-  text-align: center;
+.current-temp-degree {
+  color: rgb(66, 65, 65);
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 1;
 }
-.weather-forecast:hover {
-  transition: ease-out 0.2s;
-  border: 2px solid rgba(94, 92, 92, 0.712);
-}
-.weather-forecast-date {
-  font-size: 25px;
-}
-.referenceLink {
-  font-size: 18px;
-  margin-top: 20px;
-  text-align: center;
-}
-.main-icon {
-  width: 60px;
-}
-.main-icon:hover {
-  max-width: 80px;
-}
+
 .overview {
   margin: 20px;
 }
 
 .unitBtn {
+  border: 1px solid rgb(66, 65, 65);
   border-radius: 50%;
-  border: 1px solid #2041aa;
-  color: #2041aa;
+  color: rgb(66, 65, 65);
   font-size: 15px;
   line-height: 1.5;
   margin: 8px;
   padding: 10px 15px;
 }
 .unitBtn:hover {
-  background-color: #88d6e9a4;
+  background-color: #f8dcfcbb;
   transition: ease-out 0.2s;
 }
-#celsius-link {
-  position: relative;
-  right: -10px;
-  bottom: -150px;
-}
-#fahrenheit-link {
-  position: relative;
-  right: 25px;
-  bottom: -195px;
-}
 .active {
-  font-size: 15px;
-  background-color: #88d6e9a4;
+  background-color: #f8dcfcbb;
+}
+.referenceLink {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
 }
 .weather-app-body {
   background-color: rgba(231, 231, 231, 0.671);
@@ -257,6 +216,21 @@ h1 {
 }
 .weather-description {
   margin: 20px;
+}
+.weather-forecast {
+  background: rgba(221, 218, 218, 0.568);
+  border: 0.9px solid rgba(94, 92, 92, 0.712);
+  border-radius: 30px;
+  box-shadow: 2px 2px 30px;
+  display: block;
+  margin: 20px;
+  padding: 0 auto;
+  line-height: 1.5;
+  text-align: center;
+}
+.weather-forecast:hover {
+  border: 2px solid rgba(94, 92, 92, 0.712);
+  transition: ease-out 0.2s;
 }
 .weather-forecast-date {
   font-size: 30px;
